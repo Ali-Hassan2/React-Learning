@@ -1,0 +1,30 @@
+.strip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgb(240, 199, 34);
+    height: 30px;
+}
+
+.strip .left {
+    display: flex;
+    gap: 70px;
+}
+
+.strip .left a,
+.strip .right a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    height: 30px;
+}
+
+.strip .left a:hover,
+.strip .right a:hover {
+    background-color: black;
+    color: rgb(240, 199, 34);
+    
+}

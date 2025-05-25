@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(55, 4, 122),rgb(69, 5, 69));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+/* CSS File */
+
+body {
+    background-color: #111; /* Background color of the page */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .LoginContainer {
+    text-align: center; /* Center content */
+  }
+  
+  .LoginContainer img {
+    width: 200px; /* Adjust logo size */
+    margin-bottom: 20px; /* Space below the logo */
+  }
+  
+  .LoginContainer a {
+    display: inline-block;
+    background-color: #1db954; /* Spotify green */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Text size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 30px; /* Padding for button */
+    border-radius: 50px; /* Rounded button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .LoginContainer a:hover {
+    background-color: #1ed760; /* Lighter green on hover */
+  }
+  

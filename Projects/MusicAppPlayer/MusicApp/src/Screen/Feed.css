@@ -1,0 +1,109 @@
+/* Main Feed Styles */
+.feed-page {
+    background-color: #212122;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  .feed-header {
+    margin-bottom: 30px;
+  }
+  
+  .feed-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Feed Posts Layout */
+  .feed-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Post Card */
+  .post-card {
+    background-color: #df9d05;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Post Image */
+  .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Post Details */
+  .post-details {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .post-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .post-description {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Action Buttons (Like/Dislike) */
+  .post-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .like-btn,
+  .dislike-btn {
+    background-color: #f39c12;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .like-btn:hover {
+    background-color: #f1c40f;
+    transform: translateY(-5px);
+  }
+  
+  .dislike-btn:hover {
+    background-color: #e74c3c;
+    transform: translateY(-5px);
+  }
+  
+  /* Post Card Hover Effect */
+  .post-card:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .post-card:hover .post-image {
+    transform: scale(1.05); /* Zoom effect on image */
+  }
+  

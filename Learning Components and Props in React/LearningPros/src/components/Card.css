@@ -1,0 +1,17 @@
+
+.card{
+    
+    background-color: rgb(107, 96, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    gap: 30px;
+
+}
+.card img{
+    height: 200px;
+    border-radius: 50%;
+}

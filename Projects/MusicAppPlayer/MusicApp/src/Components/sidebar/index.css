@@ -1,0 +1,19 @@
+.sidebar{
+    width: 120px;
+    height: 100vh;
+    /* border: 1px solid blue; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #252527;
+}
+.sidebar-image{
+    height: 70px;
+    border-radius: 50%;
+    width: 70px;
+    margin-top: 30px;
+}
+.sign{
+    margin-bottom: 50px;
+}

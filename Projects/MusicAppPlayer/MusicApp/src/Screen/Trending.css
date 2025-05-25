@@ -1,0 +1,111 @@
+/* Main Content Styles */
+.trending-page {
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(64, 64, 64, 0.8), rgba(255, 223, 0, 0.6));
+    backdrop-filter: blur(10px);
+    color: #fff;
+    overflow-y: auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 60px; /* Space for the fixed button */
+  }
+  
+  /* Trending Now Button */
+  .trending-now-btn {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f39c12; /* Golden color */
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 10;
+  }
+  
+  /* Button Hover Effect */
+  .trending-now-btn:hover {
+    transform: translateX(-50%) translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bigger shadow */
+  }
+  
+  /* Title Styles */
+  .trending-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f1c40f;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Grid Layout */
+  .trending-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+  }
+  
+  /* Card Styles */
+  .trending-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.1rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+  }
+  
+  .trending-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    opacity: 0.9;
+  }
+  
+  /* Cover Image Styling */
+  .cover-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease;
+  }
+  
+  .trending-item:hover .cover-image {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Song Name Styling */
+  .song-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 15px;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Rating Styling */
+  .rating {
+    font-size: 1.2rem;
+    color: #f39c12;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  

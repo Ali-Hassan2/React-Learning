@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 1px solid red;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.container .counter{
+    border: 1px solid white;
+    padding: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+}
+.counter p{
+    font-size: 2vw;
+    color: white;
+}
+.buttons button{
+    padding: 1vw;
+    width: 100px;
+    border-radius: 50px;
+}
